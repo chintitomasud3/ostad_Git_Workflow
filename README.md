@@ -1,4 +1,4 @@
-# Task 1: Repository Initialization
+# 🔹 Task 1: Repository Initialization
 
 ### Initialize Git & Rename Default Branch to Main
 ```
@@ -30,7 +30,7 @@ git push -u origin main develop feature/login
 
 
 
-# Task 2: Branching workflow
+# 🔹 Task 2: Branching workflow
 ##  Create 2 feature branches from develop and bugfix/login-error from
 ```
 git checkout -b feature/payment develop
@@ -66,8 +66,8 @@ git checkout feature/profile
 git rebase develop
 ```
 
-## ScreenShot
-## Branches
+## 📸 ScreenShot
+## 📜 Branches
 ![Branches List](screenshots/branches_list.png "Git Branch Screenshot")
 
 
@@ -75,7 +75,7 @@ git rebase develop
 
 ![Branches List](screenshots/git_merge.png "Git merge")
 
-# Task 3: Commit History Managment
+# 🔹 Task 3: Commit History Managment
 
 
 ## Git commits on feature/login
@@ -86,3 +86,27 @@ git rebase develop
 git rebase -i HEAD~5
 ```
 ![Branches List](screenshots/Reword.png "Reword.png")
+
+
+# After changing of reword (rebase)
+![Branches List](screenshots/After_reword.png "After_reword.png")
+
+# #After squashing 
+### accidently deleted the screenshot of squash command process
+![Branches List](screenshots/After_reword.png "After_squash.png") 
+
+
+## 📘 Concept Explanations
+
+### 🔀 Merge vs Rebase
+| Feature          | `git merge`                          | `git rebase`                          |
+|------------------|--------------------------------------|---------------------------------------|
+| History Shape    | Creates a new merge commit           | Rewrites history for linear flow      |
+| Collaboration    | Safer for shared branches            | Best for local/private feature work   |
+| Conflict Handling| Resolved once at merge time          | May require resolution per commit     |
+| Use Case         | Integrating `develop` ↔ `main`       | Cleaning up feature branch before PR  |
+
+### 🧼 Squash & Reword
+- **Squash**: Combines multiple related commits into a single, meaningful commit. Reduces noise in `git log` and simplifies code review.
+- **Reword**: Modifies only the commit message without changing the snapshot. Used to fix typos, add context, or align with conventional commit standards.
+
