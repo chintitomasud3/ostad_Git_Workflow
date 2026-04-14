@@ -68,7 +68,21 @@ git rebase develop
 
 ## ScreenShot
 ## Branches
-![Screenshot](screenshot/branches_list.png)
+![Branches List](screenshots/branches_list.png "Git Branch Screenshot")
 
 
+## Git merge
 
+![Branches List](screenshots/git_merge.png "Git merge")
+
+# Task 3: Commit History Managment
+
+
+## Git commits on feature/login
+![Branches List](screenshots/git_log_login.png "git_log_login")
+
+## Interactive rebase
+```
+git rebase -i HEAD~5
+```
+![Branches List](screenshots/Reword.png "Reword.png")
