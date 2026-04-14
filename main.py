@@ -11,6 +11,8 @@ def root():
 
 # login account
 @app.post("/login")
-def login(username: str, password: str):
+def login(username: str, passwords: str):
     # Placeholder for login logic
-    return {"message": f"Hello, {username}!"}
+    return {"message": f"Hello user {username}!"}
+
+#first change commit 
