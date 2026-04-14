@@ -1,4 +1,7 @@
-# 🔹 Task 1: Repository Initialization
+# 🎯 Assignment 02 : Enterprise-Level Git Workflow, Branching & History Management
+
+
+# 🛠️ Task 1: Repository Initialization
 
 ### Initialize Git & Rename Default Branch to Main
 ```
@@ -30,7 +33,7 @@ git push -u origin main develop feature/login
 
 
 
-# 🔹 Task 2: Branching workflow
+# 🛠️ Task 2: Branching workflow
 ##  Create 2 feature branches from develop and bugfix/login-error from
 ```
 git checkout -b feature/payment develop
@@ -75,7 +78,7 @@ git rebase develop
 
 ![Branches List](screenshots/git_merge.png "Git merge")
 
-# 🔹 Task 3: Commit History Managment
+# 🛠️ Task 3: Commit History Managment
 
 
 ## Git commits on feature/login
