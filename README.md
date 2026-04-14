@@ -54,7 +54,7 @@ git commit -m "Add: add payment"
 ```
 git checkout develop
 
-git merge feature/payment
+git merge feature/login
 
 ```
 
